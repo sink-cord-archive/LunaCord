@@ -143,7 +143,7 @@ textarea {
 }
 
 /* Buttons */
-.app-2rEoOp button:not(.button-14-BFJ),
+.app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH),
 .lookFilled-1Gx00P,
 .lookOutlined-3sRXeN {
     border: 1px solid #003c74 !important;
@@ -156,20 +156,20 @@ textarea {
     color: var(--lunacord-black);
 }
 
-.app-2rEoOp button:not(.button-14-BFJ):not(.accountBtnInner-sj5jLs),
+.app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH):not(.accountBtnInner-sj5jLs),
 .lookFilled-1Gx00P,
 .lookOutlined-3sRXeN {
     background: var(--lunacord-button-gradient);
 }
 
-.app-2rEoOp button:not(.button-14-BFJ):active,
+.app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH):active,
 .lookFilled-1Gx00P:active,
 .lookOutlined-3sRXeN:active {
     box-shadow: none;
     background: var(--lunacord-button-active-gradient);
 }
 
-.app-2rEoOp button:not(.button-14-BFJ):hover,
+.app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH):hover,
 .lookFilled-1Gx00P:hover,
 .lookOutlined-3sRXeN:hover {
     box-shadow: var(--lunacord-button-boxshadow);
