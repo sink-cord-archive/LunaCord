@@ -27,10 +27,17 @@
     --lunacord-white: #fff;
     --lunacord-background-cream: #efecde;
     --lunacord-background-blue: #d3e5fa;
+    --lunacord-black: #222;
+
+    --lunacord-blue-gradient: linear-gradient(180deg, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);
+    --lunacord-white-gradient: linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4);
+    --lunacord-active-white-gradient: linear-gradient(180deg, #cdcac3, #e3e3db 8%, #e5e5de 94%, #f2f2f1);
+    --lunacord-orange-boxshadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
 
     /* Background */
     --background-primary: var(--lunacord-white);
     --background-secondary: var(--lunacord-background-cream);
+    --background-secondary-alt: var(--background-secondary);
     --background-tertiary: var(--lunacord-background-blue);
 }
 
@@ -46,7 +53,9 @@ textarea {
 
 /* Channel Header & Top Toolbar */
 .container-1r6BKw.themed-ANHk51 {
-    background: var(--lunacord-blue);
+    background: var(--lunacord-blue-gradient);
+    border-top: 1px solid #0831d9;
+    border-right: 1px solid #001ea0;
 }
 
 .iconWrapper-2OrFZ1 path[fill="currentColor"] {
@@ -65,7 +74,9 @@ textarea {
 /*  Server Header */
 .clickable-25tGDB .header-2V-4Sw,
 .clickable-25tGDB .header-2V-4Sw:hover {
-    background: var(--lunacord-blue);
+    background: var(--lunacord-blue-gradient);
+    border-top: 1px solid #0831d9;
+    border-left: 1px solid #0831d9;
 }
 
 .name-1jkAdW,
@@ -77,8 +88,9 @@ textarea {
     stroke: var(--lunacord-white);
 }
 
-/* Explore, Add server buttons */
-.circleIconButton-jET_ig {
+/* Explore, Add server buttons, Discord logo */
+.circleIconButton-jET_ig,
+.wrapper-1BJsBx .childWrapper-anI2G9 {
     background-color: var(--background-secondary);
     color: var(--lunacord-blue);
 }
@@ -88,7 +100,6 @@ textarea {
     background-color: var(--lunacord-blue);
 }
 
-/* Discord Logo */
 .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
 .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
     color: var(--lunacord-white);
@@ -130,26 +141,93 @@ textarea {
 
 /* Chatbox buttons */
 .app-2rEoOp button:not(.button-14-BFJ) {
-    background: linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4);
     border: 1px solid #003c74;
     height: 32px;
     margin: 7px;
     margin-top: 7px;
     margin-right: 7px;
     margin-bottom: 7px;
-    margin-left: 7px;
     margin-left: 0;
+    color: var(--lunacord-black);
+}
+
+.app-2rEoOp button:not(.button-14-BFJ):not(.accountBtnInner-sj5jLs) {
+    background: var(--lunacord-white-gradient);
 }
 
 .app-2rEoOp button:not(.button-14-BFJ):active {
     box-shadow: none;
-    background: linear-gradient(180deg, #cdcac3, #e3e3db 8%, #e5e5de 94%, #f2f2f1);
+    background: var(--lunacord-active-white-gradient);
 }
 
 .app-2rEoOp button:not(.button-14-BFJ):hover {
-    box-shadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
+    box-shadow: var(--lunacord-orange-boxshadow);
 }
 
 .attachButton-2WznTc {
     padding: 3px;
+}
+
+/* Settings Buttons */
+.app-2rEoOp button.lookLink-9FtZy-.colorLink-35jkBc {
+    margin-left: 7px;
+}
+
+.lookLink-9FtZy-.colorPrimary-3b3xI6 {
+    color: var(--lunacord-black) !important;
+}
+
+.lookOutlined-3sRXeN.colorRed-1TFJan,
+.lookFilled-1Gx00P.colorRed-1TFJan {
+    color: red !important;
+}
+
+.theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+    color: var(--lunacord-black);
+}
+
+/* Please CSS gods forgive me for this selector */
+form .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignStretch-DpGPf3.noWrap-3jynv6 button {
+    margin-top: 0;
+}
+
+/* Settings inputs */
+.input-cIJ7To {
+    border: none;
+    border-radius: 0;
+    color: var(--lunacord-black);
+    background-color: var(--lunacord-white);
+}
+
+/* Settings general stuff */
+.contentRegionScroller-26nc1e {
+    background-color: var(--background-secondary);
+}
+
+.sidebarRegionScroller-3MXcoP {
+    background-color: var(--background-tertiary);
+}
+
+/* Settings close icon */
+.container-1sFeqf .closeButton-1tv5uR {
+    border-color: var(--lunacord-black) !important;
+    border-radius: 3px;
+    border-width: 1px;
+    background: var(--lunacord-white-gradient);
+}
+
+.container-1sFeqf .closeButton-1tv5uR:hover {
+    box-shadow: var(--lunacord-orange-boxshadow);
+}
+
+.container-1sFeqf .closeButton-1tv5uR:active {
+    background: var(--lunacord-active-white-gradient);
+}
+
+.container-1sFeqf .closeButton-1tv5uR path {
+    stroke: var(--lunacord-black);
+}
+
+.container-1sFeqf .keybind-KpFkfr {
+    color: var(--lunacord-black);
 }
