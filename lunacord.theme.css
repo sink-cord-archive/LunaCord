@@ -1,0 +1,155 @@
+/* Shamelessly stolen font faces */
+@font-face {
+    font-family: "Pixelated MS Sans Serif";
+    src: url(https://botoxparty.github.io/XP.css/ms_sans_serif.woff) format("woff");
+    src: url(ms_sans_serif.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Pixelated MS Sans Serif";
+    src: url(https://botoxparty.github.io/XP.css/ms_sans_serif_bold.woff) format("woff");
+    src: url(https://botoxparty.github.io/XP.css/ms_sans_serif_bold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Perfect DOS VGA\ 437 Win;
+    src: url(https://botoxparty.github.io/XP.css/PerfectDOSVGA437Win.woff2) format("woff2"), url(https://botoxparty.github.io/XP.css/PerfectDOSVGA437Win.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+:root {
+    --lunacord-blue: #245edc;
+    --lunacord-white: #fff;
+    --lunacord-background-cream: #efecde;
+    --lunacord-background-blue: #d3e5fa;
+
+    /* Background */
+    --background-primary: var(--lunacord-white);
+    --background-secondary: var(--lunacord-background-cream);
+    --background-tertiary: var(--lunacord-background-blue);
+}
+
+/* Font */
+/* ::placeholder,
+body,
+button,
+input,
+select,
+textarea {
+    font-family: "Pixelated MS Sans Serif" !important;
+} */
+
+/* Channel Header & Top Toolbar */
+.container-1r6BKw.themed-ANHk51 {
+    background: var(--lunacord-blue);
+}
+
+.iconWrapper-2OrFZ1 path[fill="currentColor"] {
+    fill: var(--lunacord-white);
+}
+
+.title-29uC1r,
+.topic-TCb_qw.expandable-9fI_e3 {
+    color: var(--lunacord-white);
+}
+
+.divider-3FBTu8 {
+    background-color: var(--lunacord-white);
+}
+
+/*  Server Header */
+.clickable-25tGDB .header-2V-4Sw,
+.clickable-25tGDB .header-2V-4Sw:hover {
+    background: var(--lunacord-blue);
+}
+
+.name-1jkAdW,
+.tierTooltipTitle-3AtaZT {
+    color: var(--lunacord-white);
+}
+
+.button-1w5pas path[stroke="currentColor"] {
+    stroke: var(--lunacord-white);
+}
+
+/* Explore, Add server buttons */
+.circleIconButton-jET_ig {
+    background-color: var(--background-secondary);
+    color: var(--lunacord-blue);
+}
+
+.circleIconButton-jET_ig.selected-ugP_am {
+    color: var(--lunacord-white);
+    background-color: var(--lunacord-blue);
+}
+
+/* Discord Logo */
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
+.wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+    color: var(--lunacord-white);
+    background-color: var(--lunacord-blue);
+}
+
+/* Settings, Mute, Deafen buttons */
+.button-14-BFJ:hover {
+    box-shadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
+}
+
+.button-14-BFJ {
+    background: linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4);
+    border: 1px solid #003c74;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+}
+
+.button-14-BFJ:active {
+    box-shadow: none;
+    background: linear-gradient(180deg, #cdcac3, #e3e3db 8%, #e5e5de 94%, #f2f2f1);
+}
+
+/* Chatbox */
+.scrollableContainer-2NUZem {
+    border-radius: 0;
+    background-color: var(--lunacord-white);
+}
+
+.form-2fGMdU {
+    background-color: var(--lunacord-background-cream);
+    padding-top: 10px;
+}
+
+.form-2fGMdU:before {
+    display: none;
+}
+
+/* Chatbox buttons */
+.app-2rEoOp button:not(.button-14-BFJ) {
+    background: linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4);
+    border: 1px solid #003c74;
+    height: 32px;
+    margin: 7px;
+    margin-top: 7px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    margin-left: 7px;
+    margin-left: 0;
+}
+
+.app-2rEoOp button:not(.button-14-BFJ):active {
+    box-shadow: none;
+    background: linear-gradient(180deg, #cdcac3, #e3e3db 8%, #e5e5de 94%, #f2f2f1);
+}
+
+.app-2rEoOp button:not(.button-14-BFJ):hover {
+    box-shadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
+}
+
+.attachButton-2WznTc {
+    padding: 3px;
+}

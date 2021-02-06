@@ -1,0 +1,9 @@
+{
+    "name": "LunaCord",
+    "description": "Discord but Windows XP",
+    "version": "1.0.0",
+    "author": "Yellowsink#8156",
+    "theme": "lunacord.theme.css",
+    "consent": ["ext_listing"],
+    "license": "-"
+}
