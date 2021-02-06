@@ -30,9 +30,12 @@
     --lunacord-black: #222;
 
     --lunacord-blue-gradient: linear-gradient(180deg, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);
-    --lunacord-white-gradient: linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4);
-    --lunacord-active-white-gradient: linear-gradient(180deg, #cdcac3, #e3e3db 8%, #e5e5de 94%, #f2f2f1);
-    --lunacord-orange-boxshadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
+    --lunacord-button-gradient: linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4);
+    --lunacord-button-active-gradient: linear-gradient(180deg, #cdcac3, #e3e3db 8%, #e5e5de 94%, #f2f2f1);
+    --lunacord-button-boxshadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
+
+    --lunacord-checkbox-gradient: linear-gradient(135deg, #dcdcd7, #fff);
+    --lunacord-checkbox-boxshadow: inset -2px -2px #f8b636, inset 2px 2px #fedf9c;
 
     /* Background */
     --background-primary: var(--lunacord-white);
@@ -156,20 +159,20 @@ textarea {
 .app-2rEoOp button:not(.button-14-BFJ):not(.accountBtnInner-sj5jLs),
 .lookFilled-1Gx00P,
 .lookOutlined-3sRXeN {
-    background: var(--lunacord-white-gradient);
+    background: var(--lunacord-button-gradient);
 }
 
 .app-2rEoOp button:not(.button-14-BFJ):active,
 .lookFilled-1Gx00P:active,
 .lookOutlined-3sRXeN:active {
     box-shadow: none;
-    background: var(--lunacord-active-white-gradient);
+    background: var(--lunacord-button-active-gradient);
 }
 
 .app-2rEoOp button:not(.button-14-BFJ):hover,
 .lookFilled-1Gx00P:hover,
 .lookOutlined-3sRXeN:hover {
-    box-shadow: var(--lunacord-orange-boxshadow);
+    box-shadow: var(--lunacord-button-boxshadow);
 }
 
 .attachButton-2WznTc {
@@ -227,15 +230,15 @@ form .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.di
     border-color: var(--lunacord-black) !important;
     border-radius: 3px;
     border-width: 1px;
-    background: var(--lunacord-white-gradient);
+    background: var(--lunacord-button-gradient);
 }
 
 .container-1sFeqf .closeButton-1tv5uR:hover {
-    box-shadow: var(--lunacord-orange-boxshadow);
+    box-shadow: var(--lunacord-button-boxshadow);
 }
 
 .container-1sFeqf .closeButton-1tv5uR:active {
-    background: var(--lunacord-active-white-gradient);
+    background: var(--lunacord-button-active-gradient);
 }
 
 .container-1sFeqf .closeButton-1tv5uR path {
@@ -250,4 +253,41 @@ form .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.di
 .side-8zPYf6 .header-2RyJ0Y,
 .side-8zPYf6 .item-PXvHYJ {
     color: var(--lunacord-black) !important;
+}
+
+/* Mic test caption too high up */
+.micTestCaption-2xsa4I {
+    top: 35px;
+}
+
+/* Dropdowns */
+.css-x3hllb-control,
+.css-1ou54ee-control,
+.css-z86t1q-control {
+    background-color: var(--lunacord-white);
+}
+
+/* Radio Buttons */
+.radioBar-bMNUI- svg {
+    background: var(--lunacord-checkbox-gradient);
+    border-radius: 50%;
+    border: 1px solid #1d5281;
+    width: 18px;
+    height: 18px;
+}
+
+.radioBar-bMNUI-:hover svg {
+    box-shadow: var(--lunacord-checkbox-boxshadow);
+}
+
+.radioBar-bMNUI-:active svg {
+    background: var(--lunacord-button-active-gradient);
+}
+
+.radioBar-bMNUI- svg path {
+    display: none;
+}
+
+.radioBar-bMNUI- svg circle {
+    color: #249624;
 }
