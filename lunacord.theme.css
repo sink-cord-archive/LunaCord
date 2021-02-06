@@ -37,7 +37,7 @@
     /* Background */
     --background-primary: var(--lunacord-white);
     --background-secondary: var(--lunacord-background-cream);
-    --background-secondary-alt: var(--background-secondary);
+    --background-secondary-alt: #f6f5ee;
     --background-tertiary: var(--lunacord-background-blue);
 }
 
@@ -139,9 +139,11 @@ textarea {
     display: none;
 }
 
-/* Chatbox buttons */
-.app-2rEoOp button:not(.button-14-BFJ) {
-    border: 1px solid #003c74;
+/* Buttons */
+.app-2rEoOp button:not(.button-14-BFJ),
+.lookFilled-1Gx00P,
+.lookOutlined-3sRXeN {
+    border: 1px solid #003c74 !important;
     height: 32px;
     margin: 7px;
     margin-top: 7px;
@@ -151,16 +153,22 @@ textarea {
     color: var(--lunacord-black);
 }
 
-.app-2rEoOp button:not(.button-14-BFJ):not(.accountBtnInner-sj5jLs) {
+.app-2rEoOp button:not(.button-14-BFJ):not(.accountBtnInner-sj5jLs),
+.lookFilled-1Gx00P,
+.lookOutlined-3sRXeN {
     background: var(--lunacord-white-gradient);
 }
 
-.app-2rEoOp button:not(.button-14-BFJ):active {
+.app-2rEoOp button:not(.button-14-BFJ):active,
+.lookFilled-1Gx00P:active,
+.lookOutlined-3sRXeN:active {
     box-shadow: none;
     background: var(--lunacord-active-white-gradient);
 }
 
-.app-2rEoOp button:not(.button-14-BFJ):hover {
+.app-2rEoOp button:not(.button-14-BFJ):hover,
+.lookFilled-1Gx00P:hover,
+.lookOutlined-3sRXeN:hover {
     box-shadow: var(--lunacord-orange-boxshadow);
 }
 
@@ -168,7 +176,6 @@ textarea {
     padding: 3px;
 }
 
-/* Settings Buttons */
 .app-2rEoOp button.lookLink-9FtZy-.colorLink-35jkBc {
     margin-left: 7px;
 }
@@ -182,8 +189,9 @@ textarea {
     color: red !important;
 }
 
-.theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
-    color: var(--lunacord-black);
+.lookFilled-1Gx00P,
+.lookOutlined-3sRXeN {
+    color: var(--lunacord-black) !important;
 }
 
 /* Please CSS gods forgive me for this selector */
@@ -208,6 +216,12 @@ form .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.di
     background-color: var(--background-tertiary);
 }
 
+.cardPrimaryOutline-29Ujqw,
+.connection-1fbD7X {
+    background-color: var(--background-primary);
+}
+
+
 /* Settings close icon */
 .container-1sFeqf .closeButton-1tv5uR {
     border-color: var(--lunacord-black) !important;
@@ -230,4 +244,10 @@ form .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.di
 
 .container-1sFeqf .keybind-KpFkfr {
     color: var(--lunacord-black);
+}
+
+/* Enforce text colour - Improve contrast on Discord Nitro button */
+.side-8zPYf6 .header-2RyJ0Y,
+.side-8zPYf6 .item-PXvHYJ {
+    color: var(--lunacord-black) !important;
 }
