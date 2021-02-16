@@ -57,7 +57,7 @@ textarea {
     font-family: "Pixelated MS Sans Serif" !important;
 }
 
-/* Channel Header & Top Toolbar */
+/* Chat Header & Top Toolbar */
 .container-1r6BKw.themed-ANHk51 {
     background: var(--lunacord-blue-gradient);
     border-top: 1px solid #0831d9;
@@ -83,6 +83,7 @@ textarea {
     background: var(--lunacord-blue-gradient);
     border-top: 1px solid #0831d9;
     border-left: 1px solid #0831d9;
+    border-top-left-radius: 8px;
 }
 
 .name-1jkAdW,
@@ -94,7 +95,7 @@ textarea {
     stroke: var(--lunacord-white);
 }
 
-/* Explore, Add server buttons, Discord logo */
+/* Explore, Add server buttons, Discord logo, pill */
 .circleIconButton-jET_ig,
 .wrapper-1BJsBx .childWrapper-anI2G9 {
     background-color: var(--background-secondary);
@@ -111,6 +112,8 @@ textarea {
     color: var(--lunacord-white);
     background-color: var(--lunacord-blue);
 }
+
+.pill-31IEus span { background-color: var(--lunacord-blue); }
 
 /* Settings, Mute, Deafen buttons */
 .button-14-BFJ:hover {
@@ -304,3 +307,9 @@ form .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.di
 /* Emoji picker fixes */
 .navList-2UtuhC[aria-label="Expression Picker"] { margin-top: -0.5rem; }
 .navList-2UtuhC[aria-label="Expression Picker"] button { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+
+/* Wordmark */
+/* .wordmark-2iDDfm svg { opacity: 0; }
+.wordmark-2iDDfm::before {
+    content: "LunaCord";
+} */
