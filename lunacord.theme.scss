@@ -2,7 +2,7 @@
 @font-face {
     font-family: "Pixelated MS Sans Serif";
     src: url(https://botoxparty.github.io/XP.css/ms_sans_serif.woff) format("woff");
-    src: url(ms_sans_serif.woff2) format("woff2");
+    src: url(https://botoxparty.github.io/XP.css/ms_sans_serif.woff2) format("woff2");
     font-weight: 400;
     font-style: normal
 }
@@ -16,11 +16,14 @@
 }
 
 @font-face {
-    font-family: Perfect DOS VGA\ 437 Win;
-    src: url(https://botoxparty.github.io/XP.css/PerfectDOSVGA437Win.woff2) format("woff2"), url(https://botoxparty.github.io/XP.css/PerfectDOSVGA437Win.woff) format("woff");
+    font-family: "Perfect DOS VGA 437 Win";
+    src: url(https://botoxparty.github.io/XP.css/PerfectDOSVGA437Win.woff) format("woff");
+    src: url(https://botoxparty.github.io/XP.css/PerfectDOSVGA437Win.woff2) format("woff2");
     font-weight: 400;
     font-style: normal
 }
+
+$button-selector: ".app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH)";
 
 :root {
     --lunacord-blue: #245edc;
@@ -45,14 +48,14 @@
 }
 
 /* Font */
-/* ::placeholder,
+::placeholder,
 body,
 button,
 input,
 select,
 textarea {
     font-family: "Pixelated MS Sans Serif" !important;
-} */
+}
 
 /* Channel Header & Top Toolbar */
 .container-1r6BKw.themed-ANHk51 {
@@ -143,7 +146,7 @@ textarea {
 }
 
 /* Buttons */
-.app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH),
+.app-2rEoOp button:not( .button-14-BFJ ):not( .rtcConnectionStatusLabel-1wk4tH ),
 .lookFilled-1Gx00P,
 .lookOutlined-3sRXeN {
     border: 1px solid #003c74 !important;
@@ -156,20 +159,20 @@ textarea {
     color: var(--lunacord-black);
 }
 
-.app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH):not(.accountBtnInner-sj5jLs),
+#{$button-selector}:not(.accountBtnInner-sj5jLs),
 .lookFilled-1Gx00P,
 .lookOutlined-3sRXeN {
     background: var(--lunacord-button-gradient);
 }
 
-.app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH):active,
+#{$button-selector}:active,
 .lookFilled-1Gx00P:active,
 .lookOutlined-3sRXeN:active {
     box-shadow: none;
     background: var(--lunacord-button-active-gradient);
 }
 
-.app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH):hover,
+#{$button-selector}:hover,
 .lookFilled-1Gx00P:hover,
 .lookOutlined-3sRXeN:hover {
     box-shadow: var(--lunacord-button-boxshadow);
@@ -195,6 +198,11 @@ textarea {
 .lookFilled-1Gx00P,
 .lookOutlined-3sRXeN {
     color: var(--lunacord-black) !important;
+}
+
+button[aria-label="Jump to last unread message"] {
+    border: none !important;
+    color: white !important;
 }
 
 /* Please CSS gods forgive me for this selector */
