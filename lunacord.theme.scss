@@ -167,9 +167,10 @@ textarea {
 
 #{$button-selector}:active,
 .lookFilled-1Gx00P:active,
-.lookOutlined-3sRXeN:active {
+.lookOutlined-3sRXeN:active,
+.navButtonActive-1MkytQ {
     box-shadow: none;
-    background: var(--lunacord-button-active-gradient);
+    background: var(--lunacord-button-active-gradient) !important;
 }
 
 #{$button-selector}:hover,
@@ -299,3 +300,7 @@ form .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.di
 .radioBar-bMNUI- svg circle {
     color: #249624;
 }
+
+/* Emoji picker fixes */
+.navList-2UtuhC[aria-label="Expression Picker"] { margin-top: -0.5rem; }
+.navList-2UtuhC[aria-label="Expression Picker"] button { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
