@@ -1,50 +1,79 @@
 /* Shamelessly stolen font faces */
 @font-face {
-    font-family: "Pixelated MS Sans Serif";
-    src: url(https://botoxparty.github.io/XP.css/ms_sans_serif.woff) format("woff");
-    src: url(https://botoxparty.github.io/XP.css/ms_sans_serif.woff2) format("woff2");
-    font-weight: 400;
-    font-style: normal
+	font-family: "Pixelated MS Sans Serif";
+	src: url(https://botoxparty.github.io/XP.css/ms_sans_serif.woff)
+		format("woff");
+	src: url(https://botoxparty.github.io/XP.css/ms_sans_serif.woff2)
+		format("woff2");
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: "Pixelated MS Sans Serif";
-    src: url(https://botoxparty.github.io/XP.css/ms_sans_serif_bold.woff) format("woff");
-    src: url(https://botoxparty.github.io/XP.css/ms_sans_serif_bold.woff2) format("woff2");
-    font-weight: 700;
-    font-style: normal
+	font-family: "Pixelated MS Sans Serif";
+	src: url(https://botoxparty.github.io/XP.css/ms_sans_serif_bold.woff)
+		format("woff");
+	src: url(https://botoxparty.github.io/XP.css/ms_sans_serif_bold.woff2)
+		format("woff2");
+	font-weight: 700;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: "Perfect DOS VGA 437 Win";
-    src: url(https://botoxparty.github.io/XP.css/PerfectDOSVGA437Win.woff) format("woff");
-    src: url(https://botoxparty.github.io/XP.css/PerfectDOSVGA437Win.woff2) format("woff2");
-    font-weight: 400;
-    font-style: normal
+	font-family: "Perfect DOS VGA 437 Win";
+	src: url(https://botoxparty.github.io/XP.css/PerfectDOSVGA437Win.woff)
+		format("woff");
+	src: url(https://botoxparty.github.io/XP.css/PerfectDOSVGA437Win.woff2)
+		format("woff2");
+	font-weight: 400;
+	font-style: normal;
 }
 
 $button-selector: ".app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH)";
 
 :root {
-    --lunacord-blue: #245edc;
-    --lunacord-white: #fff;
-    --lunacord-background-cream: #efecde;
-    --lunacord-background-blue: #d3e5fa;
-    --lunacord-black: #222;
+	--lunacord-blue: #245edc;
+	--lunacord-white: #fff;
+	--lunacord-background-cream: #efecde;
+	--lunacord-background-blue: #d3e5fa;
+	--lunacord-black: #222;
 
-    --lunacord-blue-gradient: linear-gradient(180deg, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);
-    --lunacord-button-gradient: linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4);
-    --lunacord-button-active-gradient: linear-gradient(180deg, #cdcac3, #e3e3db 8%, #e5e5de 94%, #f2f2f1);
-    --lunacord-button-boxshadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
+	--lunacord-blue-gradient: linear-gradient(
+		180deg,
+		#0997ff,
+		#0053ee 8%,
+		#0050ee 40%,
+		#06f 88%,
+		#06f 93%,
+		#005bff 95%,
+		#003dd7 96%,
+		#003dd7
+	);
+	--lunacord-button-gradient: linear-gradient(
+		180deg,
+		#fff,
+		#ecebe5 86%,
+		#d8d0c4
+	);
+	--lunacord-button-active-gradient: linear-gradient(
+		180deg,
+		#cdcac3,
+		#e3e3db 8%,
+		#e5e5de 94%,
+		#f2f2f1
+	);
+	--lunacord-button-boxshadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889,
+		inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
 
-    --lunacord-checkbox-gradient: linear-gradient(135deg, #dcdcd7, #fff);
-    --lunacord-checkbox-boxshadow: inset -2px -2px #f8b636, inset 2px 2px #fedf9c;
+	--lunacord-checkbox-gradient: linear-gradient(135deg, #dcdcd7, #fff);
+	--lunacord-checkbox-boxshadow: inset -2px -2px #f8b636,
+		inset 2px 2px #fedf9c;
 
-    /* Background */
-    --background-primary: var(--lunacord-white);
-    --background-secondary: var(--lunacord-background-cream);
-    --background-secondary-alt: #f6f5ee;
-    --background-tertiary: var(--lunacord-background-blue);
+	/* Background */
+	--background-primary: var(--lunacord-white);
+	--background-secondary: var(--lunacord-background-cream);
+	--background-secondary-alt: #f6f5ee;
+	--background-tertiary: var(--lunacord-background-blue);
 }
 
 /* Font */
@@ -54,261 +83,275 @@ button,
 input,
 select,
 textarea {
-    font-family: "Pixelated MS Sans Serif" !important;
+	font-family: "Pixelated MS Sans Serif" !important;
 }
 
 /* Chat Header & Top Toolbar */
 .container-1r6BKw.themed-ANHk51 {
-    background: var(--lunacord-blue-gradient);
-    border-top: 1px solid #0831d9;
-    border-right: 1px solid #001ea0;
+	background: var(--lunacord-blue-gradient);
+	border-top: 1px solid #0831d9;
+	border-right: 1px solid #001ea0;
 }
 
 .iconWrapper-2OrFZ1 path[fill="currentColor"] {
-    fill: var(--lunacord-white);
+	fill: var(--lunacord-white);
 }
 
 .title-29uC1r,
 .topic-TCb_qw.expandable-9fI_e3 {
-    color: var(--lunacord-white);
+	color: var(--lunacord-white);
 }
 
 .divider-3FBTu8 {
-    background-color: var(--lunacord-white);
+	background-color: var(--lunacord-white);
 }
 
 /*  Server Header */
 .clickable-25tGDB .header-2V-4Sw,
 .clickable-25tGDB .header-2V-4Sw:hover {
-    background: var(--lunacord-blue-gradient);
-    border-top: 1px solid #0831d9;
-    border-left: 1px solid #0831d9;
+	background: var(--lunacord-blue-gradient);
+	border-top: 1px solid #0831d9;
+	border-left: 1px solid #0831d9;
 }
 
 .name-1jkAdW,
 .tierTooltipTitle-3AtaZT {
-    color: var(--lunacord-white);
+	color: var(--lunacord-white);
 }
 
 .button-1w5pas path[stroke="currentColor"] {
-    stroke: var(--lunacord-white);
+	stroke: var(--lunacord-white);
 }
 
 /* Explore, Add server buttons, Discord logo, pill */
 .circleIconButton-jET_ig,
 .wrapper-1BJsBx .childWrapper-anI2G9 {
-    background-color: var(--background-secondary);
-    color: var(--lunacord-blue);
+	background-color: var(--background-secondary);
+	color: var(--lunacord-blue);
 }
 
 .circleIconButton-jET_ig.selected-ugP_am {
-    color: var(--lunacord-white);
-    background-color: var(--lunacord-blue);
+	color: var(--lunacord-white);
+	background-color: var(--lunacord-blue);
 }
 
 .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
 .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
-    color: var(--lunacord-white);
-    background-color: var(--lunacord-blue);
+	color: var(--lunacord-white);
+	background-color: var(--lunacord-blue);
 }
 
-.pill-31IEus span { background-color: var(--lunacord-blue); }
+.pill-31IEus span {
+	background-color: var(--lunacord-blue);
+}
 
 /* Settings, Mute, Deafen buttons */
 .button-14-BFJ:hover {
-    box-shadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
+	box-shadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889,
+		inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
 }
 
 .button-14-BFJ {
-    background: linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4);
-    border: 1px solid #003c74;
-    width: 30px;
-    height: 30px;
-    margin: 2px;
+	background: linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4);
+	border: 1px solid #003c74;
+	width: 30px;
+	height: 30px;
+	margin: 2px;
 }
 
 .button-14-BFJ:active {
-    box-shadow: none;
-    background: linear-gradient(180deg, #cdcac3, #e3e3db 8%, #e5e5de 94%, #f2f2f1);
+	box-shadow: none;
+	background: linear-gradient(
+		180deg,
+		#cdcac3,
+		#e3e3db 8%,
+		#e5e5de 94%,
+		#f2f2f1
+	);
 }
 
 /* Chatbox */
 .scrollableContainer-2NUZem {
-    border-radius: 0;
-    background-color: var(--lunacord-white);
+	border-radius: 0;
+	background-color: var(--lunacord-white);
 }
 
 .form-2fGMdU {
-    background-color: var(--lunacord-background-cream);
-    padding-top: 10px;
+	background-color: var(--lunacord-background-cream);
+	padding-top: 10px;
 }
 
 .form-2fGMdU:before {
-    display: none;
+	display: none;
 }
 
 /* Buttons */
-.app-2rEoOp button:not( .button-14-BFJ ):not( .rtcConnectionStatusLabel-1wk4tH ),
+.app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH),
 .lookFilled-1Gx00P,
 .lookOutlined-3sRXeN {
-    border: 1px solid #003c74 !important;
-    height: 32px;
-    margin: 7px;
-    margin-top: 7px;
-    margin-right: 7px;
-    margin-bottom: 7px;
-    margin-left: 0;
-    color: var(--lunacord-black);
+	border: 1px solid #003c74 !important;
+	height: 32px;
+	margin: 7px;
+	margin-top: 7px;
+	margin-right: 7px;
+	margin-bottom: 7px;
+	margin-left: 0;
+	color: var(--lunacord-black);
 }
 
 #{$button-selector}:not(.accountBtnInner-sj5jLs),
 .lookFilled-1Gx00P,
 .lookOutlined-3sRXeN {
-    background: var(--lunacord-button-gradient);
+	background: var(--lunacord-button-gradient);
 }
 
 #{$button-selector}:active,
 .lookFilled-1Gx00P:active,
 .lookOutlined-3sRXeN:active,
 .navButtonActive-1MkytQ {
-    box-shadow: none;
-    background: var(--lunacord-button-active-gradient) !important;
+	box-shadow: none;
+	background: var(--lunacord-button-active-gradient) !important;
 }
 
 #{$button-selector}:hover,
 .lookFilled-1Gx00P:hover,
 .lookOutlined-3sRXeN:hover {
-    box-shadow: var(--lunacord-button-boxshadow);
+	box-shadow: var(--lunacord-button-boxshadow);
 }
 
 .attachButton-2WznTc {
-    padding: 3px;
+	padding: 3px;
 }
 
 .app-2rEoOp button.lookLink-9FtZy-.colorLink-35jkBc {
-    margin-left: 7px;
+	margin-left: 7px;
 }
 
 .lookLink-9FtZy-.colorPrimary-3b3xI6 {
-    color: var(--lunacord-black) !important;
+	color: var(--lunacord-black) !important;
 }
 
 .lookOutlined-3sRXeN.colorRed-1TFJan,
 .lookFilled-1Gx00P.colorRed-1TFJan {
-    color: red !important;
+	color: red !important;
 }
 
 .lookFilled-1Gx00P,
 .lookOutlined-3sRXeN {
-    color: var(--lunacord-black) !important;
+	color: var(--lunacord-black) !important;
 }
 
 button[aria-label="Jump to last unread message"] {
-    border: none !important;
-    color: white !important;
+	border: none !important;
+	color: white !important;
 }
 
 /* Please CSS gods forgive me for this selector */
-form .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignStretch-DpGPf3.noWrap-3jynv6 button {
-    margin-top: 0;
+form
+	.flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignStretch-DpGPf3.noWrap-3jynv6
+	button {
+	margin-top: 0;
 }
 
 /* Settings inputs */
 .input-cIJ7To {
-    border: none;
-    border-radius: 0;
-    color: var(--lunacord-black);
-    background-color: var(--lunacord-white);
+	border: none;
+	border-radius: 0;
+	color: var(--lunacord-black);
+	background-color: var(--lunacord-white);
 }
 
 /* Settings general stuff */
 .contentRegionScroller-26nc1e {
-    background-color: var(--background-secondary);
+	background-color: var(--background-secondary);
 }
 
 .sidebarRegionScroller-3MXcoP {
-    background-color: var(--background-tertiary);
+	background-color: var(--background-tertiary);
 }
 
 .cardPrimaryOutline-29Ujqw,
 .connection-1fbD7X {
-    background-color: var(--background-primary);
+	background-color: var(--background-primary);
 }
-
 
 /* Settings close icon */
 .container-1sFeqf .closeButton-1tv5uR {
-    border-color: var(--lunacord-black) !important;
-    border-radius: 3px;
-    border-width: 1px;
-    background: var(--lunacord-button-gradient);
+	border-color: var(--lunacord-black) !important;
+	border-radius: 3px;
+	border-width: 1px;
+	background: var(--lunacord-button-gradient);
 }
 
 .container-1sFeqf .closeButton-1tv5uR:hover {
-    box-shadow: var(--lunacord-button-boxshadow);
+	box-shadow: var(--lunacord-button-boxshadow);
 }
 
 .container-1sFeqf .closeButton-1tv5uR:active {
-    background: var(--lunacord-button-active-gradient);
+	background: var(--lunacord-button-active-gradient);
 }
 
 .container-1sFeqf .closeButton-1tv5uR path {
-    stroke: var(--lunacord-black);
+	stroke: var(--lunacord-black);
 }
 
 .container-1sFeqf .keybind-KpFkfr {
-    color: var(--lunacord-black);
+	color: var(--lunacord-black);
 }
 
 /* Enforce text colour - Improve contrast on Discord Nitro button */
 .side-8zPYf6 .header-2RyJ0Y,
 .side-8zPYf6 .item-PXvHYJ {
-    color: var(--lunacord-black) !important;
+	color: var(--lunacord-black) !important;
 }
 
 /* Mic test caption too high up */
 .micTestCaption-2xsa4I {
-    top: 35px;
+	top: 35px;
 }
 
 /* Dropdowns */
 .css-x3hllb-control,
 .css-1ou54ee-control,
 .css-z86t1q-control {
-    background-color: var(--lunacord-white);
+	background-color: var(--lunacord-white);
 }
 
 /* Radio Buttons */
 .radioBar-bMNUI- svg {
-    background: var(--lunacord-checkbox-gradient);
-    border-radius: 50%;
-    border: 1px solid #1d5281;
-    width: 18px;
-    height: 18px;
+	background: var(--lunacord-checkbox-gradient);
+	border-radius: 50%;
+	border: 1px solid #1d5281;
+	width: 18px;
+	height: 18px;
 }
 
 .radioBar-bMNUI-:hover svg {
-    box-shadow: var(--lunacord-checkbox-boxshadow);
+	box-shadow: var(--lunacord-checkbox-boxshadow);
 }
 
 .radioBar-bMNUI-:active svg {
-    background: var(--lunacord-button-active-gradient);
+	background: var(--lunacord-button-active-gradient);
 }
 
 .radioBar-bMNUI- svg path {
-    display: none;
+	display: none;
 }
 
 .radioBar-bMNUI- svg circle {
-    color: #249624;
+	color: #249624;
 }
 
 /* Emoji picker fixes */
-.navList-2UtuhC[aria-label="Expression Picker"] { margin-top: -0.5rem; }
-.navList-2UtuhC[aria-label="Expression Picker"] button { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.navList-2UtuhC[aria-label="Expression Picker"] {
+	margin-top: -0.5rem;
+}
+.navList-2UtuhC[aria-label="Expression Picker"] button {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
 
 /* Wordmark */
-/* .wordmark-2iDDfm svg { opacity: 0; }
-.wordmark-2iDDfm::before {
-    content: "LunaCord";
-} */
+.wordmark-2iDDfm path {
+	fill: var(--lunacord-blue);
+}
