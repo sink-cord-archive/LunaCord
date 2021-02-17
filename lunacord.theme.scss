@@ -117,26 +117,52 @@ textarea {
 	background: var(--background-secondary);
 }
 
-.iconWrapper-2OrFZ1 path[fill="currentColor"] {
-	fill: var(--lunacord-white);
+.theme-dark {
+	.iconWrapper-2OrFZ1 path[fill="currentColor"] {
+		fill: var(--lunacord-white);
+	}
+
+	.title-29uC1r,
+	.topic-TCb_qw.expandable-9fI_e3 {
+		color: var(--lunacord-white);
+	}
+
+	.divider-3FBTu8 {
+		background-color: var(--lunacord-white);
+	}
+
+	.name-1jkAdW,
+	.tierTooltipTitle-3AtaZT {
+		color: var(--lunacord-white);
+	}
+
+	.button-1w5pas path[stroke="currentColor"] {
+		stroke: var(--lunacord-white);
+	}
 }
 
-.title-29uC1r,
-.topic-TCb_qw.expandable-9fI_e3 {
-	color: var(--lunacord-white);
-}
+.theme-light {
+	.iconWrapper-2OrFZ1 path[fill="currentColor"] {
+		fill: var(--lunacord-black);
+	}
 
-.divider-3FBTu8 {
-	background-color: var(--lunacord-white);
-}
+	.title-29uC1r,
+	.topic-TCb_qw.expandable-9fI_e3 {
+		color: var(--lunacord-black);
+	}
 
-.name-1jkAdW,
-.tierTooltipTitle-3AtaZT {
-	color: var(--lunacord-white);
-}
+	.divider-3FBTu8 {
+		background-color: var(--lunacord-black);
+	}
 
-.button-1w5pas path[stroke="currentColor"] {
-	stroke: var(--lunacord-white);
+	.name-1jkAdW,
+	.tierTooltipTitle-3AtaZT {
+		color: var(--lunacord-black);
+	}
+
+	.button-1w5pas path[stroke="currentColor"] {
+		stroke: var(--lunacord-black);
+	}
 }
 
 /* Explore, Add server buttons, Discord logo, pill */
@@ -312,8 +338,8 @@ form
 }
 
 /* Enforce text colour - Improve contrast on Discord Nitro button */
-.side-8zPYf6 .header-2RyJ0Y,
-.side-8zPYf6 .item-PXvHYJ {
+.theme-light .side-8zPYf6 .header-2RyJ0Y,
+.theme-light .side-8zPYf6 .item-PXvHYJ {
 	color: var(--lunacord-black) !important;
 }
 
@@ -363,7 +389,7 @@ form
 	border-bottom-right-radius: 0;
 }
 
-/* Wordmark */
+/* Window chrome */
 .wordmark-2iDDfm path {
 	fill: var(--lunacord-white);
 }
@@ -372,14 +398,52 @@ form
 }
 .winButton-iRh8-Z {
 	top: 0; // TODO: Use XP-style buttons
+	width: 21px;
+	height: 21px;
+	margin-left: 2px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	box-shadow: none;
+	border: none;
+
+	background-color: transparent !important;
+
+	padding: 0;
+	display: block;
+
+	border-radius: 3px;
+	box-shadow: inset -1px -1px var(--lunacord-white),
+		inset 1px 1px var(--lunacord-white);
 }
 
-/* Go away */
-.children-19S4PO::after {
+.winButton-iRh8-Z svg {
 	visibility: hidden;
 }
 
-/* Make window chrome look like WinXP */
+.winButton-iRh8-Z[aria-label="Close"] {
+	background-image: url("https://raw.githubusercontent.com/botoxparty/XP.css/main/themes/XP/icon/close.svg");
+}
+
+.winButton-iRh8-Z[aria-label="Close"]:hover {
+	background-image: url("https://raw.githubusercontent.com/botoxparty/XP.css/main/themes/XP/icon/close-hover.svg");
+}
+
+.winButton-iRh8-Z[aria-label="Maximize"] {
+	background-image: url("https://raw.githubusercontent.com/botoxparty/XP.css/main/themes/XP/icon/maximize.svg");
+}
+
+.winButton-iRh8-Z[aria-label="Maximize"]:hover {
+	background-image: url("https://raw.githubusercontent.com/botoxparty/XP.css/main/themes/XP/icon/maximize-hover.svg");
+}
+
+.winButton-iRh8-Z[aria-label="Minimize"] {
+	background-image: url("https://raw.githubusercontent.com/botoxparty/XP.css/main/themes/XP/icon/minimize.svg");
+}
+
+.winButton-iRh8-Z[aria-label="Minimize"]:hover {
+	background-image: url("https://raw.githubusercontent.com/botoxparty/XP.css/main/themes/XP/icon/minimize-hover.svg");
+}
+
 .typeWindows-1za-n7 {
 	background: var(--lunacord-blue-gradient);
 	border-top: 1px solid #0831d9;
@@ -389,4 +453,9 @@ form
 	border-top-right-radius: 7px;
 	height: 21px;
 	padding: 3px 5px 3px 3px;
+}
+
+/* Go away */
+.children-19S4PO::after {
+	visibility: hidden;
 }
