@@ -76,6 +76,30 @@ $button-selector: ".app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStat
 	--background-tertiary: var(--lunacord-background-blue);
 }
 
+.theme-dark {
+	/* Background */
+	--background-primary: #{invert(#fff)};
+	--background-secondary: #{invert(#efecde)};
+	--background-secondary-alt: #{invert(#f6f5ee)};
+	--background-tertiary: var#{invert(#245edc)};
+
+	--lunacord-button-gradient: linear-gradient(
+		180deg,
+		#000,
+		#1b1a13 86%,
+		#3a3227
+	);
+	--lunacord-button-active-gradient: linear-gradient(
+		180deg,
+		#3d3a33,
+		#25251d 8%,
+		#22221b 94%,
+		#0d0d0c
+	);
+
+	.contents-18-Yxp { color: var(--lunacord-white); }
+}
+
 /* Font */
 ::placeholder,
 body,
@@ -152,7 +176,7 @@ textarea {
 }
 
 .button-14-BFJ {
-	background: linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4);
+	background: /* linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4) */ var(--lunacord-button-gradient);
 	border: 1px solid #003c74;
 	width: 30px;
 	height: 30px;
@@ -161,23 +185,17 @@ textarea {
 
 .button-14-BFJ:active {
 	box-shadow: none;
-	background: linear-gradient(
-		180deg,
-		#cdcac3,
-		#e3e3db 8%,
-		#e5e5de 94%,
-		#f2f2f1
-	);
+	background: var(--lunacord-button-active-gradient);
 }
 
 /* Chatbox */
 .scrollableContainer-2NUZem {
 	border-radius: 0;
-	background-color: var(--lunacord-white);
+	background-color: var(--background-primary);
 }
 
 .form-2fGMdU {
-	background-color: var(--lunacord-background-cream);
+	background-color: var(--background-secondary);
 	padding-top: 10px;
 }
 
@@ -355,3 +373,6 @@ form
 .wordmark-2iDDfm path {
 	fill: var(--lunacord-blue);
 }
+
+/* Go away */
+.children-19S4PO::after { visibility: hidden; }
