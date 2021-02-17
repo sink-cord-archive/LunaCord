@@ -97,7 +97,9 @@ $button-selector: ".app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStat
 		#0d0d0c
 	);
 
-	.contents-18-Yxp { color: var(--lunacord-white); }
+	.contents-18-Yxp {
+		color: var(--lunacord-white);
+	}
 }
 
 /* Font */
@@ -110,11 +112,9 @@ textarea {
 	font-family: "Pixelated MS Sans Serif" !important;
 }
 
-/* Chat Header & Top Toolbar */
+// Header & Top Toolbar
 .container-1r6BKw.themed-ANHk51 {
-	background: var(--lunacord-blue-gradient);
-	border-top: 1px solid #0831d9;
-	border-right: 1px solid #001ea0;
+	background: var(--background-secondary);
 }
 
 .iconWrapper-2OrFZ1 path[fill="currentColor"] {
@@ -128,14 +128,6 @@ textarea {
 
 .divider-3FBTu8 {
 	background-color: var(--lunacord-white);
-}
-
-/*  Server Header */
-.clickable-25tGDB .header-2V-4Sw,
-.clickable-25tGDB .header-2V-4Sw:hover {
-	background: var(--lunacord-blue-gradient);
-	border-top: 1px solid #0831d9;
-	border-left: 1px solid #0831d9;
 }
 
 .name-1jkAdW,
@@ -176,7 +168,9 @@ textarea {
 }
 
 .button-14-BFJ {
-	background: /* linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4) */ var(--lunacord-button-gradient);
+	background: /* linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4) */ var(
+		--lunacord-button-gradient
+	);
 	border: 1px solid #003c74;
 	width: 30px;
 	height: 30px;
@@ -371,8 +365,28 @@ form
 
 /* Wordmark */
 .wordmark-2iDDfm path {
-	fill: var(--lunacord-blue);
+	fill: var(--lunacord-white);
+}
+.wordmark-2iDDfm {
+	top: calc(((21px + 3px) - 18px) / 2);
+}
+.winButton-iRh8-Z {
+	top: 0; // TODO: Use XP-style buttons
 }
 
 /* Go away */
-.children-19S4PO::after { visibility: hidden; }
+.children-19S4PO::after {
+	visibility: hidden;
+}
+
+/* Make window chrome look like WinXP */
+.typeWindows-1za-n7 {
+	background: var(--lunacord-blue-gradient);
+	border-top: 1px solid #0831d9;
+	border-right: 1px solid #001ea0;
+	margin-top: 0;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 7px;
+	height: 21px;
+	padding: 3px 5px 3px 3px;
+}
