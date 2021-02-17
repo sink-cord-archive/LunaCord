@@ -1,3 +1,9 @@
+// Change this to be your Discord zoom level
+// If you use discord zoomed out this stops the window title looking like crap
+$zoom-level: 1;
+
+$button-selector: ".app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH)";
+
 /* Shamelessly stolen font faces */
 @font-face {
 	font-family: "Pixelated MS Sans Serif";
@@ -28,8 +34,6 @@
 	font-weight: 400;
 	font-style: normal;
 }
-
-$button-selector: ".app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH)";
 
 :root {
 	--lunacord-blue: #245edc;
@@ -464,3 +468,22 @@ form
 //.container-3baos1 { height: 5rem; }
 .form-2fGMdU { background-color: var(--background-secondary-alt); }
 .panels-j1Uci_ { background-color: var(--background-secondary); }
+
+/* Make window buttons not look disgusting at lower zooms */
+.typeWindows-1za-n7 {
+	--window-chrome-size: calc(21px / #{$zoom-level});
+	height: var(--window-chrome-size);
+}
+
+.winButton-iRh8-Z {
+	width: var(--window-chrome-size);
+	height: var(--window-chrome-size);
+}
+
+@if ($zoom-level < 1)
+{
+	.winButton-iRh8-Z { box-shadow: none; }
+}
+
+.wordmark-2iDDfm { top: calc(((var(--window-chrome-size) + 3px) - 18px) / 2); }
+.wordmark-2iDDfm svg { zoom: calc(1 + (1 - 0.8) / 2); }
