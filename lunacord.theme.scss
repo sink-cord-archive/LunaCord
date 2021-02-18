@@ -1,6 +1,6 @@
 // Change this to be your Discord zoom level
 // If you use discord zoomed out this stops the window title looking like crap
-$zoom-level: 1;
+$zoom-level: 0.8;
 
 $button-selector: ".app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH)";
 
@@ -114,6 +114,10 @@ input,
 select,
 textarea {
 	font-family: "Pixelated MS Sans Serif" !important;
+}
+
+.markup-2BOw-j {
+	font-family: "Perfect DOS VGA 437 Win" !important;
 }
 
 // Header & Top Toolbar
@@ -424,28 +428,52 @@ form
 	visibility: hidden;
 }
 
+[vizality] .winButton-iRh8-Z[aria-label="Close"] {
+	background-image: url("vz-theme://lunacord/assets/close.svg");
+}
+
+[vizality] .winButton-iRh8-Z[aria-label="Close"]:hover {
+	background-image: url("vz-theme://lunacord/assets/close-hover.svg");
+}
+
+[vizality] .winButton-iRh8-Z[aria-label="Maximise"] {
+	background-image: url("vz-theme://lunacord/assets/maximise.svg");
+}
+
+[vizality] .winButton-iRh8-Z[aria-label="Maximise"]:hover {
+	background-image: url("vz-theme://lunacord/assets/maximise-hover.svg");
+}
+
+[vizality] .winButton-iRh8-Z[aria-label="Minimize"] {
+	background-image: url("vz-theme://lunacord/assets/minimize.svg");
+}
+
+[vizality] .winButton-iRh8-Z[aria-label="Minimize"]:hover {
+	background-image: url("vz-theme://lunacord/assets/minimize-hover.svg");
+}
+
 .winButton-iRh8-Z[aria-label="Close"] {
-	background-image: url("https://raw.githubusercontent.com/botoxparty/XP.css/main/themes/XP/icon/close.svg");
+	background-image: url("https://raw.githubusercontent.com/cainy-a/LunaCord/assets/close.svg");
 }
 
 .winButton-iRh8-Z[aria-label="Close"]:hover {
-	background-image: url("https://raw.githubusercontent.com/botoxparty/XP.css/main/themes/XP/icon/close-hover.svg");
+	background-image: url("https://raw.githubusercontent.com/cainy-a/LunaCord/assets/close-hover.svg");
 }
 
 .winButton-iRh8-Z[aria-label="Maximize"] {
-	background-image: url("https://raw.githubusercontent.com/botoxparty/XP.css/main/themes/XP/icon/maximize.svg");
+	background-image: url("https://raw.githubusercontent.com/cainy-a/LunaCord/assets/maximize.svg");
 }
 
 .winButton-iRh8-Z[aria-label="Maximize"]:hover {
-	background-image: url("https://raw.githubusercontent.com/botoxparty/XP.css/main/themes/XP/icon/maximize-hover.svg");
+	background-image: url("https://raw.githubusercontent.com/cainy-a/LunaCord/assets/maximize-hover.svg");
 }
 
 .winButton-iRh8-Z[aria-label="Minimize"] {
-	background-image: url("https://raw.githubusercontent.com/botoxparty/XP.css/main/themes/XP/icon/minimize.svg");
+	background-image: url("https://raw.githubusercontent.com/cainy-a/LunaCord/assets/minimize.svg");
 }
 
 .winButton-iRh8-Z[aria-label="Minimize"]:hover {
-	background-image: url("https://raw.githubusercontent.com/botoxparty/XP.css/main/themes/XP/icon/minimize-hover.svg");
+	background-image: url("https://raw.githubusercontent.com/cainy-a/LunaCord/assets/minimize-hover.svg");
 }
 
 .typeWindows-1za-n7 {
@@ -458,6 +486,9 @@ form
 	height: 21px;
 	padding: 3px 5px 3px 3px;
 }
+
+// Remove windows chrome border-radius when maximised (Vizality only)
+[vz-window="maximized"] .typeWindows-1za-n7 { border-radius: 0; }
 
 /* Go away */
 .children-19S4PO::after {
