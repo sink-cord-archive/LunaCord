@@ -1,0 +1,7 @@
+@use "lunacord.theme";
+
+// this file contains various fixes to make otherwise vizality-only features (sort of) work
+
+.powercord.maximized .typeWindows-1za-n7 {
+    border-radius: 0;
+}

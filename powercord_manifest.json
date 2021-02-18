@@ -3,7 +3,7 @@
     "description": "Discord but Windows XP",
     "version": "1.0.0",
     "author": "Yellowsink#8156",
-    "theme": "lunacord.theme.scss",
+    "theme": "powercord_compat.scss",
     "consent": ["ext_listing"],
     "license": "-"
 }
